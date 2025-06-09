@@ -34,7 +34,7 @@ const UserEntryPage = () => {
           <div className="bg-cream rounded-full p-4 w-20 h-20 mx-auto mb-4 flex items-center justify-center border-2 border-orange-primary">
             <BookOpen className="w-10 h-10 text-orange-primary" />
           </div>
-          <h1 className="text-2xl font-bold text-gray-800 mb-2">Welcome to ISSACHAR</h1>
+          <h1 className="text-2xl font-bold text-gray-800 mb-2">Welcome to JOSEPH</h1>
           <p className="text-gray-600">Joseph Group Revision Platform</p>
         </div>
 
