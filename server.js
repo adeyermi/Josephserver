@@ -6,7 +6,7 @@ const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
 
-const { sendNotificationEmail, sendVoiceRecordingEmail } = require('./emailService');
+const { sendNotificationEmail, sendVoiceRecordingEmail } = require('./emailservice');
 
 const app = express();
 app.use(cors());
