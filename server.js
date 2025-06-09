@@ -89,7 +89,11 @@ app.get('/api/single/:type', (req, res) => {
 
   fs.access(filePath, fs.constants.F_OK, (err) => {
     if (err) return res.status(404).json({ message: 'File not found' });
-    res.download(filePath);
+
+    // Serve inline
+    res.setHeader('Content-Type', 'application/pdf');
+    res.setHeader('Content-Disposition', `inline; filename="${type}.pdf"`);
+    res.sendFile(filePath);
   });
 });
 
@@ -111,7 +115,11 @@ app.get('/api/pastquestions/:filename', (req, res) => {
 
   fs.access(filePath, fs.constants.F_OK, (err) => {
     if (err) return res.status(404).json({ message: 'File not found' });
-    res.download(filePath);
+
+    // Set headers to display the PDF in-browser
+    res.setHeader('Content-Type', 'application/pdf');
+    res.setHeader('Content-Disposition', `inline; filename="${filename}"`);
+    res.sendFile(filePath);
   });
 });
 
