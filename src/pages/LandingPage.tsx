@@ -41,7 +41,7 @@ const LandingPage = () => {
 
         {/* Title */}
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-8 tracking-wide">
-          ISSACHAR
+          JOSEPH
           <span className="block text-2xl md:text-3xl font-normal text-orange-200 mt-2">
             Revision Platform
           </span>
